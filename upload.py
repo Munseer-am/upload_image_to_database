@@ -20,3 +20,6 @@ for file in files:
         content = f.read()
         f.close()
     cur.execute(insertQuery, (file, content))
+
+conn.commit()
+conn.close()
